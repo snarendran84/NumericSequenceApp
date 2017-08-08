@@ -1,6 +1,5 @@
 using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using NumericSequenceApp.Controllers;
 using System.Collections.Generic;
 using NumericSequenceApp.Implementations;
 
