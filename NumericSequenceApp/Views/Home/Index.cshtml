@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<form id="numericForm" role="form">
+    <div class="row">
+        <div class="col-md-12 form-group">
+            <h2>Numeric Sequencer</h2>
+            <label for="numberLabel">Enter a Whole number</label>
+            <input type="number" class="form-control" id="numberInput" placeholder="Please enter a non-zero whole number" required> <br/>
+            <div class="btn-group" role="group" aria-label="...">
+                <button type="button" id="btnNumSeq" class="btn btn-default" onclick="">Number Sequence</button>
+                <button type="button" id="btnOddNumSeq" class="btn btn-default" onclick="">Odd Number Sequence</button>
+                <button type="button" id="btnEvenNumSeq" class="btn btn-default" onclick="">Even Number Sequence</button>
+                <button type="button" id="btnFibNumSeq" class="btn btn-default" onclick="">Fibonacci Sequence</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+<div class="modal fade" id="seqModal" role="dialog" aria-labelledby="myModalLabel" >
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="lblModalTitle"></h4>
+            </div>
+            <div class="modal-body" style="word-wrap:break-word">
+                <label id="lblModalBody" ></label>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-default" data-dismiss="modal" aria-hidden="true">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
